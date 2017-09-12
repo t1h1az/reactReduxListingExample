@@ -10,7 +10,7 @@ class BookList extends Component {
           <li
             key={book.title}
             onClick={() => this.props.selectBook(book)}
-            className="collection-item">
+            className="booklistitem">
             {book.title}
           </li>
       );
@@ -19,7 +19,7 @@ class BookList extends Component {
 
   render() {
     return (
-      <ul className="collection ">
+      <ul className="booklist">
         {this.renderBookList()}
       </ul>
     );

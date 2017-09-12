@@ -1,4 +1,53 @@
 body {
-  background-color: #eee;
+  background-color: #efebe9 ;
   font: 'Roboto';
+}
+
+.containerBoth {
+  display: inline-block;
+  overflow:auto;
+
+}
+
+.bookListContainer {
+  box-shadow: 10px 10px 10px black;
+  width: 20%;
+  margin: 20px;
+  float: left;
+}
+.bookDetailContainer {
+  width: 70%;
+  box-shadow: 5px 5px 5px black;
+  margin: 20px;
+  padding: 20px;
+  float: right;
+}
+.bookDetailShort {
+  padding-bottom: 20px;
+}
+.bookDetailAuthor {
+  text-align: right;
+}
+.bookDetailSeperator {
+  height: 2px;
+  border: 1px solid black;
+  border-radius: 200px;
+  width: auto;
+  margin: 20px 0 20px 0;
+
+}
+
+.booklist {
+  margin: 0;
+}
+
+.booklistitem {
+  border: 1px solid #ddd;
+  padding: 20px;
+  display: block;
+}
+.booklistitem:hover {
+  color: white;
+  background-color: #fb8c00;
+  cursor: pointer;
 }

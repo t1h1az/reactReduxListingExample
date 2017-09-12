@@ -6,8 +6,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <BookList />
-        <BookDetail />
+        <div className="bookListContainer">
+          <BookList />
+        </div>
+        <div className="bookDetailContainer" >
+          <BookDetail />
+        </div>
       </div>
     );
   }
