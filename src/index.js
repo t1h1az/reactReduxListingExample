@@ -1,26 +1,18 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-const path = require('path');
+import App from './components/app.js';
+import { createStore } from 'redux';
+import reducers from './reducers';
+import { Provider } from 'react-redux';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+let store = createStore(reducers);
 
-    this.state = {
-      state: []
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        Give it a try
-        {this.path}
-      </div>
-    );
-  }
-}
 
 //Take this component's generated HTML and put it
 // on the page (in the DOM)
-ReactDOM.render(<App/>, document.querySelector('.container'));
+ReactDOM.render(
+  <Provider store={store}>
+    <App/>
+  </Provider>,
+   document.querySelector('.container')
+ );
