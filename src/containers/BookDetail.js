@@ -7,15 +7,21 @@ class BookDetail extends Component {
       return <div>...click a book to display summary</div>;
     }
     return (
-      <div>
-        <div className="bookDetailShort">
-          {this.props.activeBook.short}
+      <div className="col s12 m7">
+          <div className="card horizontal">
+            <div className="card-image">
+              <img src="https://unsplash.it/200/300/?random"></img>
+            </div>
+            <div className="card-stacked">
+              <div className="card-content">
+                <p>{this.props.activeBook.short}</p>
+              </div>
+              <div className="card-action right-align">
+                  <p> - {this.props.activeBook.author}</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="bookDetailSeperator"></div>
-        <div className="bookDetailAuthor">
-          -  {this.props.activeBook.author}
-        </div>
-      </div>
     );
   }
 }

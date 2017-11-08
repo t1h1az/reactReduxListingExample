@@ -10,7 +10,7 @@ class BookList extends Component {
           <li
             key={book.title}
             onClick={() => this.props.selectBook(book)}
-            className="booklistitem">
+            className="booklistitem one-edge-shadow">
             {book.title}
           </li>
       );
